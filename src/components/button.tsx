@@ -1,8 +1,12 @@
-import * as React from 'react';
+import * as React from "react";
+import "./button.scss";
 
 function Button() {
-  return <div style={{ color: 'red' }}>button</div>;
+  return (
+    <div className="button" style={{ color: "red" }}>
+      <span>button</span>
+    </div>
+  );
 }
 
 export default Button;
-
