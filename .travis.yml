@@ -11,3 +11,6 @@ node_js: stable # 设置版本
 
 install:
   - npm install
+
+script:
+  - npm run test
