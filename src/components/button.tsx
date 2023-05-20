@@ -1,11 +1,12 @@
-import * as React from "react";
+import React from "react";
 import "./button.scss";
 
-function Button() {
+function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+  const { onClick } = props
   return (
-    <div className="button" style={{ color: "red" }}>
+    <button className="button" style={{ color: "red" }} onClick={onClick}>
       <span>button</span>
-    </div>
+    </button>
   );
 }
 

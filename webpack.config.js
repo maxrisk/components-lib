@@ -37,5 +37,16 @@ module.exports =  {
       template: './src/index.html'
     }),
     new MiniCssExtractPlugin(),
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          name: 'vendor',
+          test: /(react|react-dom)/,
+          chunks: 'all'
+        },
+      }
+    }
+  }
 }
