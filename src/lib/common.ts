@@ -1,3 +1,3 @@
-export default function () {
-  console.log('123123');
+export default function getName() {
+  return '123123';
 }

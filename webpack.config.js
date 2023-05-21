@@ -34,7 +34,9 @@ module.exports =  {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new EslintWebpackPlugin(),
+    new EslintWebpackPlugin({
+      extensions: ['ts', 'tsx']
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
