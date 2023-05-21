@@ -1,12 +1,13 @@
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
+  plugins: ['@typescript-eslint'],
   env: {
     node: true,
     browser: true,
     es6: true,
   },
-  extends: 'airbnb-base',
+  extends: ['airbnb-base', 'airbnb-typescript'],
   rules: {
     'no-console': 'error',
     "import/extensions": [
