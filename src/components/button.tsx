@@ -1,7 +1,11 @@
 import React from 'react';
 import './button.scss';
 
-function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+type ButtonProps = {
+  onClick: () => void
+};
+
+function Button(props: ButtonProps) {
   const { onClick } = props;
   return (
     <button className='button' style={{ color: 'red' }} onClick={onClick}>

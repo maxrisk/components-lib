@@ -1,3 +1,3 @@
 export default function getName() {
-  return '123123';
+  return [1, 2].map(() => 1);
 }
