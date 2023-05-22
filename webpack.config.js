@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const EslintWebpackPlugin = require('eslint-webpack-plugin')
 
 module.exports =  {
-  mode: "none",
+  mode: "production",
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -15,7 +15,7 @@ module.exports =  {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: ['babel-loader', 'ts-loader'],
+        use: ['ts-loader'],
         exclude: /node_modules/,
       },
       {
